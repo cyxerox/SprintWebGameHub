@@ -1,0 +1,79 @@
+<!-- start: REGISTER BOX -->
+<div class="box-register">
+    {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+
+    <fieldset>
+        <legend>
+            Edit Profile
+        </legend>
+        <p>
+            Edit your personal details below:
+        </p>
+        <div class="form-group">
+
+            {{ form_widget(form.pseudo, { 'attr': {'class': "form-control",
+                'placeholder': 'Pseudo'} }) }}
+
+
+        </div>
+        <div class="form-group">
+            {{ form_widget(form.nom, { 'attr': {'class': "form-control",
+                'placeholder': 'Nom'} }) }}
+
+        </div>
+        <div class="form-group">
+            {{ form_widget(form.prenom, { 'attr': {'class': "form-control",
+                'placeholder': 'Prenom'} }) }}
+
+        </div>
+        <div class="form-group">
+            {{ form_widget(form.tel, { 'attr': {'class': "form-control",
+                'placeholder': 'Tel'} }) }}
+
+        </div>
+
+
+        <p>
+            Enter your account details below:
+        </p>
+        <div class="form-group">
+                    <span class="input-icon">
+
+                        {{ form_widget(form.email, { 'attr': {'class': "form-control",
+                            'placeholder': 'Email'} }) }}
+
+                        <i class="fa fa-envelope"></i> </span>
+        </div>
+        <div class="form-group">
+                    <span class="input-icon">
+                         {{ form_widget(form.username, { 'attr': {'class': "form-control",
+                             'placeholder': 'Username'} }) }}
+                        <i class="fa fa-user"></i>
+                     </span>
+        </div>
+        <div class="form-group">
+                    <span class="input-icon">
+
+                        {{ form_widget(form.current_password, { 'attr': {'class': "form-control",
+                            'placeholder': 'Password'} }) }}
+
+                        <i class="fa fa-lock"></i> </span>
+        </div>
+
+
+        <div class="form-actions">
+
+            <div>
+                <input type="submit" class="btn btn-primary pull-right" value="Update" />
+            </div>
+        </div>
+    </fieldset>
+
+    {{ form_end(form) }}
+    <!-- start: COPYRIGHT -->
+    <div class="copyright">
+        &copy; <span class="current-year"></span><span class="text-bold"> GameHub</span>. <span>All rights reserved</span>
+    </div>
+    <!-- end: COPYRIGHT -->
+</div>
+<!-- end: REGISTER BOX -->

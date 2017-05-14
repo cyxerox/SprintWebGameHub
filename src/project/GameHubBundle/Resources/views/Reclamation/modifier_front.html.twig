@@ -1,0 +1,74 @@
+{% extends '@projectGameHub/Layout_front.html.twig' %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="header-breadcrumbs">
+            <h2 class="right">Update reclamation</h2>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li>Update reclamation</li>
+            </ul>
+        </div>
+    </div>
+
+    </header>
+    <div id="main-box" class="full-width">
+
+        <div id="main">
+            <div class="forum-block">
+
+                <h2><span>Update reclamation"</span></h2>
+
+
+
+                <div class="content-padding full-reply">
+                    <div class="reply-box">
+                        <div class="reply-textarea">
+                            {{ form_start(formModif, {'method': 'post', 'action': path('project_game_hub_reclamation_modifier_FO', { 'pseudo': entity.pseudo })}) }}
+
+                                <div class="respond-input">
+                                    <label for="inputEmail3"  > <h4 class="modal-title" id="myModalLabel">description :</h4> </label><br>
+                                    {{ form_widget(formModif.description, { 'attr': {'class': 'form-control'} }) }} {{ form_errors(formModif.description) }}
+
+
+                                </div>
+                                <div class="respond-input">
+                                    <label for="inputPassword3"  ><h4 class="modal-title" id="myModalLabel">pseudo :</h4></label><br>
+
+                                    <select  id="pseudo" name="pseudo" class="form-control">
+                                        {% for m in membre %}
+                                            {% if m.roles[0]=="ROLE_USER" %}
+                                                <option {% if m.username == entity.pseudo %}selected{% endif %} value="{{ m.username }}">{{ m.username }}</option>
+                                            {% endif %}
+                                        {% endfor %}
+
+                                    </select>
+
+                                </div>
+                                <div class="respond-input">
+                                    <label for="inputPassword3" ><h4 class="modal-title" id="myModalLabel"> url :</h4></label><br>
+                                    {{ form_widget(formModif.url, { 'attr': {'class': 'form-control categorie'} }) }} {{ form_errors(formModif.url) }}
+
+                                </div>
+
+                                <input type="submit" name="send" value="Update reclamation">
+
+                                {{form_end(formModif)}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="clear-float"></div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="clear-float"></div>
+
+
+{% endblock %}

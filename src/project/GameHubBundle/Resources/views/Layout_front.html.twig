@@ -1,0 +1,216 @@
+<html lang = "en">
+<head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <title>GameHub</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:type" content="company" />
+        <meta property="og:title" content="Revelio Theme | Homepage" />
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="http://datcouch.com" />
+        <meta property="og:site_name" content="Revelio Theme | Homepage" />
+
+        <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/dat-menu.css') }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/main-stylesheet.css') }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:300,400,700|Source+Sans+Pro:300,400,600,700&amp;subset=latin,latin-ext') }}" />
+        <!--[if lt IE 9 ]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            #featured-img-1 {
+                background-image: url({{ asset('images/photos/image-1.jpg') }});
+            }
+            #featured-img-2 {
+                background-image: url({{ asset('images/photos/image-2.jpg') }});
+            }
+            #featured-img-3 {
+                background-image: url({{ asset('images/photos/image-3.jpg') }});
+            }
+            #featured-img-4 {
+                background-image: url({{ asset('images/photos/image-4.jpg') }});
+            }
+
+            /* Man content & sidebar top lne, default #256193 */
+            #sidebar .panel,
+            #main-box #main {
+                border-top: 5px solid #256193;
+            }
+
+            /* Slider colors, default #256193 */
+            a.featured-select,
+            #slider-info .padding-box ul li:before,
+            .home-article.right ul li a:hover {
+                background-color: #256193;
+            }
+
+            /* Button color, default #256193 */
+            .panel-duel-voting .panel-duel-vote a {
+                background-color: #256193;
+            }
+
+            /* Menu background color, default #000 */
+            #menu-bottom.blurred #menu > .blur-before:after {
+                background-color: #000;
+            }
+
+            /* Top menu background, default #0D0D0D */
+            #header-top {
+                background: #0D0D0D;
+            }
+
+            /* Sidebar panel titles color, default #333333 */
+            #sidebar .panel > h2 {
+                color: #333333;
+            }
+
+            /* Main titles color, default #353535 */
+            #main h2 span {
+                color: #353535;
+            }
+
+            /* Selection color, default #256193 */
+            ::selection {
+                background: #256193;
+            }
+
+            /* Links hover color, default #256193 */
+            .article-icons a:hover,
+            a:hover {
+                color: #256193;
+            }
+
+            /* Image hover background, default #256193 */
+            .article-image-out,
+            .article-image {
+                background: #256193;
+            }
+
+            /* Image hover icons color, default #256193 */
+            span.article-image span .fa {
+                color: #256193;
+            }
+        </style>
+    {% endblock %}
+</head>
+<body class="has-top-menu has-dat-menu">
+<div id="dat-menu" class="effect-1">
+    <div class="dat-menu-container" style="background: url("{{ asset('images/bg.jpg') }}") 50% 0% / auto repeat scroll padding-box border-box rgb(23, 23, 23);">
+
+    <section id="content">
+
+        <header id="header">
+            <div id="menu-bottom" class="blurred">
+                <!-- <nav id="menu" class="main-menu width-fluid"> -->
+                <nav id="menu" class="main-menu" style="background-image: url({{ asset('images/photos/image-1.jpg') }});">
+                    <div class="blur-before"></div>
+                    <a href=" " class="header-logo left"><img src="{{ asset('bundles/projectgamehub/images/logo game hub.png') }}"style="width: 30% " class="logo" alt="Revelio" title=""></a>
+                    <a href="#dat-menu" class="datmenu-prompt"><i class="fa fa-bars"></i>Show menu</a>
+                    <ul class="load-responsive" rel="Main menu">
+                        <li><a href="#"><span><i class="fa fa-comment"></i><strong>Blog Page</strong></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Single Post</a></li>
+                                <li><a href="#">Sidebar on Left side</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-calendar-o"></i><strong>Schedule</strong></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Events List</a></li>
+                                <li><a href="#">Event Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span><i class="fa fa-puzzle-piece"></i><strong>Features</strong></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Shortcodes</a></li>
+                                <li><a href="#">Login page</a></li>
+                                <li><a href="#">Sign up page</a></li>
+                                <li><a href="#">Private messages</a></li>
+                                <li><a href="#">****Games detail page</a></li>
+                                <li><a href="#">Podcast list</a></li>
+                                <li><a href="#">Podcast single</a></li>
+                                <li><a href="#">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-camera-retro"></i><strong>Photo Gallery</strong></a></li>
+                        <li><a href="#"><span><i class="fa fa-comments-o"></i><strong>Forum layout</strong></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Forums layout</a></li>
+                                <li><a href="#">Forum threads list</a></li>
+                                <li><a href="#">Single forum topic</a></li>
+                                <li><a href="#">Create new topic</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#"><i class="fa fa-map-marker"></i><strong>Contact us</strong></a></li>
+
+                        <li><a href="#">
+                                <span><i class="fa fa-users"></i>
+                                    <strong>
+                                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                        {{ app.user.username|capitalize }}
+                                    {% endif %}
+                                    </strong>
+                                </span>
+                            </a>
+
+                            <ul class="sub-menu">
+
+                                {% if is_granted('ROLE_ADMIN') %}
+                                 <li><a href="{{ path("project_game_hub_reclamation") }}"> BackOffice </a></li>
+                                {% endif %}
+                                <li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="no-icon"><a href="#"><strong>Without icon</strong></a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <div id="slider">
+                <div id="slider-info">
+
+                    <a href="javascript: featSelect(1);" id="featSelect-1" class="featured-select this-active">
+                        <span class="w-bar" id="feat-countdown-bar-1">.</span>
+                        <span class="w-coin" id="feat-countdown-1">0</span>
+                        <img src="{{ asset('images/photos/image-5.jpg') }}" alt="" title="">
+                    </a>
+                    <a href="javascript: featSelect(2);" id="featSelect-2" class="featured-select">
+                        <span class="w-bar" id="feat-countdown-bar-2" style="width: 20%;">.</span>
+                        <span class="w-coin" id="feat-countdown-2">6</span>
+                        <img src="{{ asset('images/photos/image-6.jpg') }}" alt="" title="">
+                    </a>
+                    <a href="javascript: featSelect(3);" id="featSelect-3" class="featured-select">
+                        <span class="w-bar" id="feat-countdown-bar-3">.</span>
+                        <span class="w-coin" id="feat-countdown-3">0</span>
+                        <img src="{{ asset('images/photos/image-7.jpg') }}" alt="" title="">
+                    </a>
+                    <a href="javascript: featSelect(4);" id="featSelect-4" class="featured-select">
+                        <span class="w-bar" id="feat-countdown-bar-4">.</span>
+                        <span class="w-coin" id="feat-countdown-4">0</span>
+                        <img src="{{ asset('images/photos/image-8.jpg') }}" alt="" title="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+
+        {% endblock %}
+
+    </section>
+</div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,23 @@
+
+
+
+
+project_game_hub_FO:
+    path:     /fo
+    defaults: { _controller: projectGameHubBundle:Reclamation:index2 }
+
+project_game_hub_FO_ajout:
+    path:     /foajout
+    defaults: { _controller: projectGameHubBundle:Reclamation:ajout2 }
+
+
+
+project_game_hub_reclamation_delete_FO:
+    path:     /deleteFO/{id}
+    defaults: { _controller: projectGameHubBundle:Reclamation:delete2 }
+
+
+project_game_hub_reclamation_modifier_FO:
+    path:     /modifierFO/{pseudo}
+    defaults: { _controller: projectGameHubBundle:Reclamation:modifier2 }
+

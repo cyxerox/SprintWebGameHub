@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- projectgamehub Name: Clip-Two - Responsive Admin projectgamehub build with Twitter Bootstrap 3.x | Author: ClipTheme -->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
+<head>
+    <title>GameHub</title>
+    <!-- start: META -->
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('bundles/projectgamehub/images/Sans.png') }}" />
+    <!-- start: GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <!-- end: GOOGLE FONTS -->
+
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/js/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/js/fontawesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/js/themify-icons/themify-icons.min.css') }}">
+    <link href="{{ asset('bundles/projectgamehub/js/animate.css/animate.min.css') }}" rel="stylesheet"  media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/perfect-scrollbar/perfect-scrollbar.min.css') }}" rel="stylesheet"  media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/switchery/switchery.min.css') }}" rel="stylesheet"  media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css') }}" rel="stylesheet"  media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/bootstrap-timepicker/bootstrap-timepicker.min.css') }}" rel="stylesheet"  media="screen">
+
+
+
+
+
+    <!-- end: MAIN CSS -->
+    <!-- start: CLIP-TWO CSS -->
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/css/styles.css') }} ">
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/css/plugins.css') }} ">
+    <link rel="stylesheet" href="{{ asset('bundles/projectgamehub/css/themes/theme-1.css') }} " id="skin_color">
+    <!-- end: CLIP-TWO CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+    <link href="{{ asset('bundles/projectgamehub/js/select2/select2.min.css') }}" rel="stylesheet"  media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/DataTables/css/DT_bootstrap.css') }}" rel="stylesheet"  media="screen">
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="{{ asset('bundles/projectgamehub/js/fullcalendar/fullcalendar.min.css') }} " rel="stylesheet" media="screen">
+    <link href="{{ asset('bundles/projectgamehub/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" media="screen">
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+    <!-- start: CSS REQUIRED FOR THIS Notifcation ONLY -->
+    <link href="{{ asset('bundles/projectgamehub/js/sweetalert/sweet-alert.css') }}" rel="stylesheet" media="screen">
+    <!-- end: CSS REQUIRED FOR THIS Notifcation ONLY -->
+
+    <style type="text/css"></style>
+</head>
+<!-- end: HEAD -->
+<body>
+<div id="app">
+    <!-- sidebar -->
+    <div class="sidebar app-aside" id="sidebar">
+        <div class="sidebar-container perfect-scrollbar">
+            <nav>
+                <!-- start: MAIN NAVIGATION MENU -->
+
+                <div class="navbar-title">
+
+                </div>
+
+                <br>
+                <br>
+                <ul class="main-navigation-menu">
+                        <li>
+                            <a href="{{ path('project_game_hub_reclamation') }}">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="fa fa-info-circle"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title">&nbsp; Reclamation  </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+
+                </ul>
+
+                <!-- end: MAIN NAVIGATION MENU -->
+
+
+            </nav>
+        </div>
+    </div>
+    <!-- / sidebar -->
+    <div class="app-content">
+        <!-- start: TOP NAVBAR -->
+        <header class="navbar navbar-default navbar-static-top">
+            <!-- start: NAVBAR HEADER -->
+            <div class="navbar-header">
+                <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off"  data-toggle-click-outside="#sidebar">
+                    <i class="ti-align-justify"></i>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="{{ asset('bundles/projectgamehub/images/logo game hub.png') }}" height="75%"/>
+                </a>
+                <a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+                    <i class="ti-align-justify"></i>
+                </a>
+                <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="ti-view-grid"></i>
+                </a>
+            </div>
+            <!-- end: NAVBAR HEADER -->
+            <!-- start: NAVBAR COLLAPSE -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-right">
+                    <!-- start: USER OPTIONS DROPDOWN -->
+                    <li class="dropdown current-user">
+                        <a href class="dropdown-toggle" data-toggle="dropdown">
+									<span class="username">
+										{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                            {{ app.user.username|capitalize }}
+                                        {% endif %}
+                                        <i class="ti-angle-down"></i>
+									</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-dark">
+                            <li>
+                                <a href="{{ path("project_game_hub_FO") }}"> Site web </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('fos_user_profile_show') }}">
+                                    Profil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ path('fos_user_security_logout') }}">
+                                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end: USER OPTIONS DROPDOWN -->
+                </ul>
+                <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+                <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                    <div class="arrow-left"></div>
+                    <div class="arrow-right"></div>
+                </div>
+                <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+            </div>
+
+            <!-- end: NAVBAR COLLAPSE -->
+        </header>
+        <!-- end: TOP NAVBAR -->
+        <div class="main-content" >
+
+            {% block body %}
+            {% endblock %}
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+<!-- start: MAIN JAVASCRIPTS -->
+<script src="{{ asset('bundles/projectgamehub/js/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/modernizr/modernizr.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/jquery-cookie/jquery.cookie.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/switchery/switchery.min.js') }}"></script>
+<!-- end: MAIN JAVASCRIPTS -->
+<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<script src="{{ asset('bundles/projectgamehub/js/Chart.js/Chart.min.js') }} "></script>
+
+
+<script src="{{ asset('bundles/projectgamehub/js/jquery.sparkline/jquery.sparkline.min.js') }} "></script>
+
+
+<script src="{{ asset('bundles/projectgamehub/js/jquery-ui/jquery-ui-1.10.2.custom.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/moment/moment.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/jquery-validation/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/fullcalendar/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/bootstrap-timepicker/bootstrap-timepicker.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/bootstrap-datepicker/bootstrap-datepicker.min.js') }}"></script>
+
+
+<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<!-- start: CLIP-TWO JAVASCRIPTS -->
+<script src="{{ asset('bundles/projectgamehub/js/main.js') }} "></script>
+
+
+
+
+<!-- start: JavaScript Event Handlers for this page -->
+<script src="{{ asset('bundles/projectgamehub/js/index.js') }} "></script>
+<script src="{{ asset('bundles/projectgamehub/js/ajax.js') }} "></script>
+<script src="{{ asset('bundles/projectgamehub/js/ajax1.js') }} "></script>
+<script src="{{ asset('bundles/fosjsrouting/js/router.js') }} "></script>
+<script src="{{ asset('bundles/projectgamehub/js/form-elements.js') }}"></script>
+
+
+<script src="{{ asset('bundles/projectgamehub/js/select2/select2.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/DataTables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/table-data.js') }}"></script>
+
+<script src="{{ asset('bundles/projectgamehub/js/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
+<script src="{{ asset('bundles/projectgamehub/js/Chart.js/Chart.min.js') }}"></script>
+
+
+
+<script>
+    $("form input.datetime").datetimepicker({
+    });
+
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+    
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- end: JavaScript Event Handlers for this page -->
+<!-- end: CLIP-TWO JAVASCRIPTS -->
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+
+<div class="tab-content">
+    <div id="panel_overview" class="tab-pane fade in active">
+        <a href="{{ path("project_game_hub_FO") }}"> Site web </a>
+        <div class="row">
+
+            <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+                <div class="">
+                    <div class="center">
+                        <h4>{{ app.user.nom }} {{ app.user.prenom }}</h4>
+
+                        <hr>
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th colspan="3">General information</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Username</td>
+                            <td> {{ user.username }}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td> {{ user.email }}</td>
+                        </tr>
+                        <tr>
+                            <td>Nom</td>
+                            <td> {{ user.nom }}</td>
+                        </tr>
+                        <tr>
+                            <td>Prenom</td>
+                            <td>
+                                {{ user.prenom }}
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td> {{ user.tel }}</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                    <a href="{{ path("fos_user_profile_edit") }}"> modifier </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

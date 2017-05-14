@@ -1,0 +1,41 @@
+
+
+project_game_hub_reclamation:
+    path:     /
+    defaults: { _controller: projectGameHubBundle:Reclamation:index }
+
+
+project_game_hub_reclamation_ajout:
+    path:     /ajout
+    defaults: { _controller: projectGameHubBundle:Reclamation:ajout }
+
+project_game_hub_reclamation_modifier:
+    path:     /modifier/{pseudo}
+    defaults: { _controller: projectGameHubBundle:Reclamation:modifier }
+
+
+project_game_hub_reclamation_delete:
+    path:     /delete/{id}
+    defaults: { _controller: projectGameHubBundle:Reclamation:delete }
+
+
+project_game_hub_reclamation_show:
+    path:     /show/{pseudo}
+    defaults: { _controller: projectGameHubBundle:Reclamation:show }
+
+
+project_game_hub_ban:
+    path:     /ban/{id}
+    defaults: { _controller: projectGameHubBundle:Ban:ban }
+
+
+project_game_hub_deban:
+    path:     /deban/{id}
+    defaults: { _controller: projectGameHubBundle:Ban:deban }
+
+
+project_game_hub_recherche:
+    path:     /recherche
+    defaults: { _controller: projectGameHubBundle:Reclamation:Recherche }
+
+

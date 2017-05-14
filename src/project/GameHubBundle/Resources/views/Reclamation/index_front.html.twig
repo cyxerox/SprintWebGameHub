@@ -1,0 +1,81 @@
+{% extends '@projectGameHub/Layout_front.html.twig' %}
+
+{% block content %}
+            <div class="wrapper">
+                <div class="header-breadcrumbs">
+                    <h2 class="right">Thread Single</h2>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li>Thread Single</li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <div id="main-box" class="full-width">
+
+            <div id="main">
+                <div class="forum-block">
+
+                    <h2><span>List of reclamations</span></h2>
+
+                    <div class="content-padding">
+                        <div class="forum-description">
+                            <a href="{{ path('project_game_hub_FO_ajout') }}" class="defbutton big"><i class="fa fa-comment-o"></i>Create new reclamtion</a>
+                        </div>
+                    </div>
+
+                    <div class="forum-threads-head">
+                        <strong class="thread-subject"><span>description</span></strong>
+                        <strong class="thread-author">Pseudo</strong>
+                        <strong class="thread-replies">url</strong>
+                        <strong class="thread-last">Action</strong>
+                    </div>
+
+                    <!-- BEGIN .forum-threads -->
+                    <div class="forum-threads">
+                        {% for entity in Reclamation %}
+                        <!-- BEGIN .thread-link -->
+                        <div class="thread-link thread-unread thread-sticky">
+                            <a href="forum-single.html">
+                                <i class="forum-icon strike-tooltip" title="Topic has answers">
+                                    <i class="fa fa-comments-o"></i>
+                                </i>
+                                <span>{{ entity.description }} </span>
+                            </a>
+                            <div class="thread-author">
+                                <span class="f-user-link"><a href="user-single.html"><strong>{{ entity.pseudo }}</strong></a></span>
+                            </div>
+
+
+                            <div class="thread-replies">
+                                <span>{{ entity.url  }}</span>
+                            </div>
+                            <div class="thread-last">
+                                <span class="f-user-link"><a href="user-single.html"><strong>
+                                            <a data-toggle="modal" href="{{ path('project_game_hub_reclamation_modifier_FO', { 'pseudo': entity.pseudo }) }}">
+                                            <i class="fa fa-lg fa-pencil-square-o"></i>
+                                        </a>
+                                               <a data-toggle="modal" href="{{ path('project_game_hub_reclamation_delete_FO', { 'id': entity.pseudo }) }}" data-target="#delete{{ entity.pseudo }}"  type="submit"  >
+                                            <i class="fa fa-lg fa-close"></i>
+                                        </a>
+                                        </strong></a>
+                                </span>
+                            </div>
+                            <!-- END .thread-link -->
+                        </div>
+
+                        {% endfor %}
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="clear-float"></div>
+
+        </div>
+
+{% endblock %}

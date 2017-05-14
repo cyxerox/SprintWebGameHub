@@ -1,0 +1,14 @@
+project_game_hub:
+    resource: "@projectGameHubBundle/Resources/config/routing.yml"
+    prefix:   /rec
+
+project_game_hub_Fe:
+    resource: "@projectGameHubBundle/Resources/config/routing2.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
